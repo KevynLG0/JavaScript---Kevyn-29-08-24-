@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização com Flexbox</title>
+    <script src="javascript.js"></script>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #Bloco-login {
+            width: 300px;
+            padding: 100px;
+            background-color: rgb(105, 212, 132);
+            text-align: center;
+            color: white;
+            border-radius: 30px;
+        }
+        label{
+            color: black;
+        }
+        h2{
+            font-size: 35px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #MenssagemErro{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="Bloco-login">
+        <h2>Login</h2>
+            <label for="username">Usuário</label><br>
+            <input type="text" id="username" name="username" ><br><br>
+            <label for="password">Senha</label><br>
+            <input type="password" id="password" name="password" ><br><br>
+            <button type="submit" onclick="logar()">Entrar</button>            
+            <p id="MenssagemErro"></p>
+    </div>
+</body>
+</html>
